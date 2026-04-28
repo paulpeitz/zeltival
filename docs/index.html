@@ -74,6 +74,18 @@
 		  });
 		</script>
 
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then((registration) => {
+        console.log('Service Worker registriert:', registration);
+      })
+      .catch((error) => {
+        console.log('Service Worker Registrierung fehlgeschlagen:', error);
+      });
+  }
+</script>
+			
 		<div class="header" id="myHeader">
 			<div id="embed-iframe"></div>
 		</div>
