@@ -1,20 +1,25 @@
 {
   "short_name": "Zeltival",
   "name": "Zeltival 2026",
+  "description": "Festival-Übersicht mit Spotify Integration",
   "icons": [
     {
       "src": "/favicon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/favicon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
-  "start_url": ".",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "theme_color": "black",
-  "background_color": "white"
+  "orientation": "portrait-primary",
+  "theme_color": "#12b2c0",
+  "background_color": "#ffffff"
 }
